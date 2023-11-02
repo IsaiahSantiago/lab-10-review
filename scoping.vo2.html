@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoping 02</title>
+</head>
+<body>
+    <script>
+    // A for loop has; (1) an initialization, (2) a termination condition
+    // (3) an incremental statement
+        
+    for (let i = 0; i <= 10; i = i + 1 ) {
+        console.log("inside" + i );
+    }
+
+    console.log("outside i:" + i ); // this line runs AFTER the iteration (repitition)
+
+    for (let i = 0; i<= 10; i = i + 1) {
+    // ... while LET allows us to use i again in this block, without overwiting - 
+    console.log("outside i:" + i );
+    }
+
+
+// the scope of I is limited to what code it's used in
+
+// the let symbol
+// declares a variable that has LOCAL SCOPE
+// Local scope: means that the variables cannot be recalled anywhere else in our javascript
+// Local scope means that the variable can only be used within the "scope" 0 
+
+// before 2015 (E56)
+// we only had var 
+
+
+
+
+
+    </script>
+</body>
+</html>
